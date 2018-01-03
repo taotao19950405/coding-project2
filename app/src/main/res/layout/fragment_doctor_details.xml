@@ -1,0 +1,98 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linear_layout_vertical_details_doctor"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	tools:context="orionhealth.app.activities.main.AddDoctorActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			style="@style/section_Layout_style">
+
+			<TextView
+				android:id="@+id/text_label_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="4dp"
+				android:text="@string/text_label_name" />
+
+			<EditText
+				android:id="@+id/edit_text_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/edit_text_name_hint" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			style="@style/section_Layout_style">
+
+			<TextView
+				android:id="@+id/text_label_dosage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="4dp"
+				android:text="@string/text_label_dosage" />
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<EditText
+					android:id="@+id/edit_text_dosage"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/edit_text_dosage_hint"
+					android:layout_alignParentLeft="true"
+					android:inputType="number" />
+
+				<Spinner
+					android:id="@+id/unit_spinner"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			style="@style/section_Layout_style">
+
+			<TextView
+				android:id="@+id/text_reasonForUse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:paddingLeft="4dp"
+				android:text="@string/text_label_reasonForUse"/>
+
+			<EditText
+				android:id="@+id/edit_text_reasonForUse"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/edit_text_reasonForUse_hint" />
+		</LinearLayout>
+
+		<Button android:text="@string/button_send"
+			android:id="@+id/button_send"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"/>
+
+	</LinearLayout>
+</LinearLayout>

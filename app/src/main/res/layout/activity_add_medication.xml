@@ -1,0 +1,31 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	tools:context="orionhealth.app.activities.main.AddMedicationActivity">
+
+<LinearLayout android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical"
+							android:background="@drawable/background"
+							android:paddingLeft="15dp"
+							android:paddingRight="15dp"
+							android:paddingTop="5dp"
+							android:paddingBottom="5dp"
+							android:id="@+id/linear_layout_vertical_add_medication">
+
+	<fragment android:name="orionhealth.app.activities.fragments.fragments.MedicationDetailsFragment"
+						android:id="@+id/fragment_medication_details"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" />
+
+	<Button android:text="@string/button_add"
+					android:id="@+id/button_add"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:onClick="addMedicationToDatabase"
+					android:layout_gravity="center_vertical"/>
+</LinearLayout>
+
+</ScrollView>

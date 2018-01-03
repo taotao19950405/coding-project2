@@ -1,0 +1,113 @@
+<resources>
+	<string name="app_name">OrionHealth</string>
+	<string name="title_activity_my_medication">My Medication</string>
+	<string name="title_activity_add_medication">Add Medication</string>
+	<string name="title_activity_edit_medication">Medication</string>
+	<string name="title_activity_add_allergy">Add Allergy</string>
+	<string name="title_activity_edit_allergy">Edit Allergy</string>
+
+	<string name="title_activity_add_condition">Add Condition</string>
+	<string name="title_activity_edit_condition">Edit Condition</string>
+
+	<string name="button_add">Add</string>
+	<string name="button_send">Send</string>
+	<string name="button_add_condition">Add</string>
+	<string name="button_save">Save</string>
+	<string name="button_edit"><b>Edit</b></string>
+	<string name="button_remove">remove</string>
+
+	<string name="text_label_name">Name:</string>
+	<string name="text_label_dosage">Dosage:</string>
+	<string name="text_label_effectiveStart">Effective From:</string>
+    <string name="text_label_effectiveEnd">Effective Till:</string>
+	<string name="text_label_notes">Notes:</string>
+    <string name="text_label_instructions">Instructions:</string>
+
+	<string name="text_label_reasonForUse">Use Reason:</string>
+	<string name="text_label_condition">Conditon:</string>
+	<string name="text_label_category">Category:</string>
+	<string name="text_label_dateRecorded">Recorded date:</string>
+	<string name="text_label_severity">Severity:</string>
+	<string name="text_label_evidence">Evidence:</string>
+	<string name="text_label_verificationStatus">Verfication:</string>
+
+	<string name="text_hardcoded_Date">1.1</string>
+	<string name="text_hardcoded_reasonForUse">Pain</string>
+	<string name="text_hardcoded_Note">Taken with water, after meal.</string>
+
+    <string name="text_label_substance">Substance:</string>
+	<string name="text_label_allergy_details">Details:</string>
+    <string name="text_label_allergy_reaction">Reaction:</string>
+    <string name="text_label_allergy_criticality">Criticality:</string>
+
+	<string name="medication_information_header">Medication Information:</string>
+	<string name="allergy_information_header">Allergy Information:</string>
+	<string name="condition_information_header">Condition Information</string>
+	<string name="schedule_header">Schedule:</string>
+	<string name="additional_header">Additional:</string>
+	<string name="details_header">Details:</string>
+
+	<string name="edit_text_name_hint">Enter the name</string>
+	<string name="edit_text_dosage_hint">Enter the dosage  </string>
+	<string name="edit_text_reasonForUse_hint">Enter the use reason</string>
+	<string name="edit_text_effectiveStart_hint">Select start date</string>
+	<string name="edit_text_effectiveEnd_hint">Select end date</string>
+    <string name="edit_text_notes_hint">Enter any extra notes</string>
+    <string name="edit_text_allergy_hint">Enter reaction type</string>
+    <string name="edit_text_substance_hint">Enter a substance</string>
+	<string name="edit_text_condition_hint">Enter any condition/problem/\ndiagnosis</string>
+	<string name="edit_text_daterecorded_hint">Select recorded date</string>
+	<string name="edit_text_evidence_hint">\u0020\u0020\u0020\u0020\u0020Enter symptom details\u0020\u0020\u0020\u0020\u0020</string>
+	<string name="edit_text_verification_hint">Select to support or decline the \nclinical status of the condition\n or diagnosis.</string>
+
+	<string name="drawer_open">Open navigation drawer</string>
+	<string name="drawer_close">Close navigation drawer</string>
+	<string name="title_activity_take_medication">Take Medication</string>
+	<string name="title_activity_doctor">Doctor</string>
+
+	<string name="remove_med_dialog_title">Remove Medication</string>
+	<string name="remove_cond_dialog_title">Remove Condition</string>
+	<string name="remove_med_dialog_message">Are you sure you want to remove this medication?</string>
+	<string name="remove_cond_dialog_message">Are you sure you want to remove this condition?</string>
+	<string name="remove_med_dialog_positive_button">Yes</string>
+	<string name="remove_med_dialog_negative_button">No</string>
+
+	<string name="remove_allergy_dialog_title">Remove Allergy</string>
+	<string name="remove_allergy_dialog_message">Are you sure you want to remove this allergy?</string>
+	<string name="remove_allergy_dialog_positive_button">Yes</string>
+	<string name="remove_allergy_dialog_negative_button">No</string>
+
+
+	<string name="title_section1">1</string>
+	<string name="title_section2">2</string>
+	<string name="title_section3">3</string>
+	<string name="title_section4">4</string>
+	<string name="title_section5">5</string>
+
+	<string name="empty_med_list_message">No Medication Currently Listed</string>
+	<string name="empty_allergy_list_message">No Allergy Currently Listed</string>
+
+	<string name="construction_message">Sorry this page is currently under construction</string>
+
+	<string name="action_settings">Settings</string>
+
+	<string-array name="minute_interval_array">
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+		<item>20</item>
+		<item>25</item>
+		<item>30</item>
+		<item>35</item>
+		<item>40</item>
+		<item>45</item>
+		<item>50</item>
+		<item>55</item>
+		<item>60</item>
+	</string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+
+	<string name="hello_world">Hello world!</string>
+</resources>

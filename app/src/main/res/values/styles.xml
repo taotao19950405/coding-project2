@@ -1,0 +1,73 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#ff6a00</item>
+		<item name="colorAccent">#36a4ff</item>
+		<item name="colorControlNormal">#14b1ba</item>
+	</style>
+
+	<style name="AppTheme2" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+	</style>
+
+	<style name="AllergyTheme" parent="AppTheme">
+		<item name="colorAccent">#36a4ff</item>
+		<item name="colorControlNormal">#14b1ba</item>
+	</style>
+
+	<style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+		<item name="tabIndicatorColor">#ff7719</item>
+		<item name="tabIndicatorHeight">3dp</item>
+		<item name="tabBackground">@android:color/holo_blue_light</item>
+		<item name="tabSelectedTextColor">?android:textColorPrimary</item>
+	</style>
+
+	<style name="MedicationFABStyle" parent="Widget.Design.FloatingActionButton">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">10dp</item>
+		<item name="android:src">@drawable/plus</item>
+	</style>
+	
+	<style name="section_Layout_style" parent="AppTheme">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">5dp</item>
+		<item name="android:layout_marginBottom">5dp</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	<style name="HorizontalDivider" parent="AppTheme">
+		<item name="android:padding">10dp</item>
+	</style>
+
+	<style name="LightBlueHorizontalDivider" parent="HorizontalDivider">
+		<item name="android:background">#14b1ba</item>
+	</style>
+
+	<style name="RedHorizontalDivider" parent="HorizontalDivider">
+		<item name="android:background">#f7001e</item>
+	</style>
+
+	<style name="LightGreenHorizontalDivider" parent="HorizontalDivider">
+		<item name="android:background">#35fe38</item>
+	</style>
+	
+	<style name="Header" parent="AppTheme">
+		<item name="android:textSize">9pt</item>
+		<item name="android:paddingTop">20dp</item>
+		<item name="android:paddingBottom">10dp</item>
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">10dp</item>
+	</style>
+
+	<style name="LightBlueHeader" parent="Header">
+		<item name="android:textColor">#14b1ba</item>
+	</style>
+
+	<style name="LightGreenHeader" parent="Header">
+		<item name="android:textColor">#22bf24</item>
+	</style>
+
+
+</resources>

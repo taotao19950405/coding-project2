@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp"
+    android:id="@+id/linear_layout_vertical_edit_allergy"
+    tools:context="orionhealth.app.activities.main.EditAllergyActivity">
+
+    <fragment android:name="orionhealth.app.activities.fragments.fragments.AllergyDetailsFragment"
+        android:id="@+id/fragment_allergy_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="orionhealth.app.activities.main.EditAllergyActivity">
+
+        <Button android:text="@string/button_save"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="updateAllergyInDatabase" />
+
+        <Button android:text="@string/button_remove"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="removeAllergy"/>
+    </LinearLayout>
+
+</LinearLayout>

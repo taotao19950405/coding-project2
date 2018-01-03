@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/condition_list"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+	</ListView>
+
+	<TextView
+		android:id="@android:id/empty"
+		android:text="No Condition Listed"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+	</TextView>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/button_add_condition"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		app:backgroundTint="#ff8900"
+		style="@style/MedicationFABStyle"
+		/>
+
+</RelativeLayout>

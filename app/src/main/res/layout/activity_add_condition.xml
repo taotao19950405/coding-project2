@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:id="@+id/linear_layout_vertical_add_condition">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							xmlns:tools="http://schemas.android.com/tools"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+    android:background="@drawable/background"
+							android:orientation="vertical"
+							android:paddingLeft="15dp"
+							android:paddingRight="15dp"
+							android:paddingTop="5dp"
+							tools:context=".activities.main.AddConditionActivity">
+
+	<fragment android:id="@+id/fragment_condition_details"
+		android:name="orionhealth.app.activities.fragments.fragments.ConditionDetailsFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<Button android:id="@+id/button_add_condition"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:onClick="addConditionToDatabase"
+		android:text="@string/button_add_condition"/>
+</LinearLayout>
+</ScrollView>

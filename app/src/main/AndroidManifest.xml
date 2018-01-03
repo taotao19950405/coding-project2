@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="orionhealth.app" >
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	  <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:label="@string/title_activity_my_medication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.AddMedicationActivity"
+            android:label="@string/title_activity_add_medication"
+            android:parentActivityName=".activities.main.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.EditMedicationActivity"
+            android:label="@string/title_activity_edit_medication"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.AddAllergyActivity"
+            android:label="@string/title_activity_add_allergy"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AllergyTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.EditAllergyActivity"
+            android:label="@string/title_activity_edit_allergy"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AllergyTheme"
+            android:windowSoftInputMode="stateHidden" >
+>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.AddConditionActivity"
+            android:label="@string/title_activity_add_condition"
+            android:parentActivityName=".activities.main.AddConditionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.AddConditionActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.EditConditionActivity"
+            android:label="@string/title_activity_edit_condition"
+            android:parentActivityName=".activities.main.EditConditionActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.main.EditConditionActivity" />
+        </activity>
+
+        <receiver
+            android:name=".broadCastReceivers.AlarmReceiver"
+            android:exported="false"
+            android:process=":remote" />
+        <receiver
+            android:name=".broadCastReceivers.AlarmSetter"
+            android:exported="false"
+            android:process=":remote" />
+
+        <service android:name=".services.RingToneService" />
+        <service android:name=".services.MedResponseService" />
+				<service android:name=".services.UpdateUIService"/>
+
+        <activity
+            android:name=".activities.main.TakeMedicationActivity"
+            android:label="@string/title_activity_take_medication">
+        </activity>
+
+			<activity
+				android:name=".activities.main.AddDoctorActivity"
+				android:label="@string/title_activity_doctor" >
+			</activity>
+
+    </application
+        >
+
+
+</manifest>

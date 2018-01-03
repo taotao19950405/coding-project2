@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linear_layout_vertical_details_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context=".activities.main.AddConditionActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/condition_information_header"
+            style="@style/LightBlueHeader" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/LightBlueHorizontalDivider" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <TextView
+                android:id="@+id/text_label_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/text_label_condition" />
+
+            <EditText
+                android:id="@+id/edit_text_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:gravity="top|left"
+                android:hint="@string/edit_text_condition_hint"
+                android:lines="4"
+                android:maxLines="5"
+                android:minLines="2" />
+
+
+            <TextView
+                android:id="@+id/text_label_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/text_label_category" />
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_weight="1.5" />
+
+
+            <TextView
+                android:id="@+id/text_label_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="@string/text_label_dateRecorded" />
+
+            <EditText
+                android:id="@+id/edit_text_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:hint="@string/edit_text_daterecorded_hint"
+                android:inputType="date" />
+            <!--android:onClick="showDatePickerDialog" />-->
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details_header"
+            style="@style/LightBlueHeader" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/LightBlueHorizontalDivider"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <TextView
+                android:id="@+id/text_label_severity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginTop="4dp"
+                android:layout_row="0"
+                android:text="@string/text_label_severity" />
+
+            <Spinner
+                android:id="@+id/severity_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_label_evidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/text_label_evidence" />
+
+            <EditText
+                android:id="@+id/edit_text_evidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_marginTop="5dp"
+                android:lines="15"
+                android:maxLines="20"
+                android:minLines="10"
+                android:inputType="textMultiLine"
+                android:background="@drawable/rect_text_edit"
+                android:hint="@string/edit_text_evidence_hint" />
+
+            <TextView
+                android:id="@+id/text_label_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="@string/text_label_verificationStatus" />
+
+            <!--How to do hint with spinner-->
+            <!--<EditText-->
+                <!--android:id="@+id/edit_text_verification"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_column="1"-->
+                <!--android:layout_row="2"-->
+                <!--android:hint="@string/edit_text_verification_hint" />-->
+
+            <Spinner
+                android:id="@+id/verification_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_weight="1" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/additional_header"
+            style="@style/LightBlueHeader" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/LightBlueHorizontalDivider"/>
+
+
+        <EditText
+            android:id="@+id/edit_text_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:hint="@string/edit_text_notes_hint"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3" />
+
+
+    </LinearLayout>
